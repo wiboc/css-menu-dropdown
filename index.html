@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+<head>
+	<title>CSS Menu DropDown - Giovani Generali</title>
+<style>
+*{
+	margin:0;
+	padding:0;
+	font-family: Arial;
+	font-size:12px;
+}
+#menu_test{
+	background:#A82B1C;
+	height:31px;
+	padding:10px 20px 0;
+	text-transform:uppercase;
+	width:812px;
+}
+#menu_test ul {
+	list-style: none;
+}
+#menu_test ul li {
+	float:left;
+}
+#menu_test li:hover ul {
+	display:block;
+}
+#menu_test ul li a {
+	background:#621810;
+	color:#FFFFFF;
+	display:block;
+	font-size:1.2em;
+	font-weight:bold;
+	height:15px;
+	margin-right:10px;
+	padding:8px 10px;
+	text-decoration:none;
+}
+#menu_test li a:hover, #menu_test li a:focus, #menu_test li a:active {
+	color:#FFFFFF;
+	background: #FDA91E;
+}
+#menu_test ul li ul {
+	background:#621810;
+	display:none;
+	list-style: none;
+	position:absolute;
+	
+}
+#menu_test ul li ul li {
+	clear:both;
+}
+#menu_test ul li ul li a {
+	margin:0;
+}
+#menu_test ul li ul li a:hover {
+	background:none;
+	color:#FDA91E;
+	margin:0;
+}
+</style>
+</head>
+<body>
+	<div id="menu_test">
+		<ul>
+			<li class="menu">
+				<a href="">Menu 1</a>
+			</li>
+			<li>
+				<a href="">Menu 2</a>
+				<ul>
+					<li class="submenu">
+						<a href="">Submenu 1</a>
+					</li>
+					<li>
+						<a href="">Submenu 2</a>
+					</li>
+					<li>
+						<a href="">Submenu 3</a>
+					</li>
+					<li>
+						<a href="">Submenu 4</a>
+					</li>
+					<li>
+						<a href="">Submenu 5</a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="">Menu 3</a>
+			</li>
+			<li>
+				<a href="">Menu 4</a>
+			</li>
+			<li>
+				<a href="">Menu 5</a>
+			</li>
+			<li>
+				<a href="">Menu 6</a>
+			</li>
+			<li>
+				<a href="">Menu 7</a>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>
